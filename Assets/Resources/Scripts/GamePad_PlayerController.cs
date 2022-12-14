@@ -101,6 +101,7 @@ public class GamePad_PlayerController : MonoBehaviour
 
         public void OnDeviceChange(PlayerInput pi)
     {
+    //"isGamepad" must be checked during gameplay in unity's Inspector Tab when "Player" is selected in Hierarchy for handleRotation to take affect
         isGamepad = pi.currentControlScheme.Equals("Gamepad") ? true : false;
 
     }
